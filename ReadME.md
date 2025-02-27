@@ -1,7 +1,3 @@
-Aquí tienes la descripción completa para el archivo `ReadMe.md` de tu proyecto:
-
----
-
 # Pruebas Unitarias para Calculadora en Python
 
 Este proyecto tiene como objetivo realizar pruebas unitarias sobre una calculadora sencilla implementada en Python. Las pruebas están diseñadas para verificar que las operaciones básicas de la calculadora (suma, resta, multiplicación y división) funcionen correctamente, utilizando el módulo `unittest`.
