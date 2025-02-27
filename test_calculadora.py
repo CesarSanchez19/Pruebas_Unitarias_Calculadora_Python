@@ -57,9 +57,12 @@ class TestCalculadora(unittest.TestCase):
         self.assertAlmostEqual(self.calc.division(5, 11), 0.45454545454545454545454545454545)
     
     # Prueba especifica para verificar el manejo de la division por cero
-    def test_division_con_cero(self):
-        # Prueba para evaluar manejo de errores cuando  b = 0
-        self.assertRaises(ValueError, self.calc.division, 20, 0)
+    def test_division_por_cero(self):
+        # Prueba para evaluar cuando dividida el primer numero entre el segundo e incluye validacion para evitar division por cero
+        with self.assertRaises(ValueError):
+            self.calc.division(20, 0)
+        
+        # Fuentes del metodo de prueba: https://docs.python.org/es/3.9/library/unittest.html#unittest.TestCase.assertRaises
 
 # failUnlessEqual o assertEquals obsoleto.
 
